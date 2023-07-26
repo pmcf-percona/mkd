@@ -5,6 +5,7 @@ theme:
   name: material
   logo: assets/percona-mark.svg
   favicon: assets/percona-fav.svg
+  custom_dir: overrides
   font:
     text: Roboto
     code: Roboto Mono
