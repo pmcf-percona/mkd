@@ -1,6 +1,6 @@
-site_name: Percona Server for MySQL
-repo_url: https://github.com/pmcf-percona/mkd
-repo_name: percona/psmysql-docs
+site_name: Products documentation
+# repo_url: https://github.com/pmcf-percona/mkd
+# repo_name: percona/psmysql-docs
 theme:
   name: material
   logo: assets/percona-mark.svg
@@ -26,7 +26,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - content.tabs.link
@@ -79,8 +79,8 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets:
       base_path: ["snippets"]
-      auto_append:
-        - services-banner.md
+      # auto_append:
+      #   - services-banner.md
   - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
@@ -88,19 +88,46 @@ markdown_extensions:
 
 # Page tree def
 nav:
-  - About:
-    - Percona Server for MySQL: index.md
-    - Features:
-      - feature/binary-log-disk-usage.md
-      - feature/extended-mysqlbinlog.md
-      - feature/extended-select-into.md
-    - Release Notes:
-      - release-note/2023/8.0.33-25.md
-      - 2023: 
-        - release-note/2023/8.0.32-24.md
-  - Installation:
-    - Quickstart Guides: installation/quickstart-guides.md
-    - Install via apt:
-      - installation/apt/quickstart.md
-      - installation/apt/run-stop.md
-      - installation/apt/uninstall.md
+  - Product Alpha:
+    - Quickstart Guide: install-alpha.md
+    - Setting up: test.md
+    - Get Started: test.md
+    - How to: test.md
+    - Details: test.md
+    - FAQ: test.md
+    - Release Notes: test.md
+    - Reference: test.md
+  - Product Beta:
+    - Quickstart Guides: install-beta.md
+    - Installation:
+      - Package Manager:
+        - Install using `apt`: test.md
+        - Install using `yum`: test.md
+    - Details: test.md
+    - FAQ: test.md
+    - Release Notes: test.md
+    - Reference: test.md
+  - Product Gamma:
+    - test.md
+  - Product Delta:
+    - test.md
+  - Product Epsilon:
+    - test.md
+  - About: test.md
+# nav:
+#   - About:
+#     - Percona Server for MySQL: index.md
+#     - Features:
+#       - feature/binary-log-disk-usage.md
+#       - feature/extended-mysqlbinlog.md
+#       - feature/extended-select-into.md
+#     - Release Notes:
+#       - release-note/2023/8.0.33-25.md
+#       - 2023: 
+#         - release-note/2023/8.0.32-24.md
+#   - Installation:
+#     - Quickstart Guides: installation/quickstart-guides.md
+#     - Install via apt:
+#       - installation/apt/quickstart.md
+#       - installation/apt/run-stop.md
+#       - installation/apt/uninstall.md

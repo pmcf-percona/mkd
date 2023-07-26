@@ -143,10 +143,10 @@
 }
 .md-typeset .tabbed-labels>label {
     font-size: 0.75rem;
-    padding: 1em;
+    padding: 0.5em 1em;
 }
 .js .md-typeset .tabbed-labels:before {
-    height: 5px;
+    height: 4px;
 }
 .md-typeset [class*="moji"] {
     vertical-align: -0.25em;
