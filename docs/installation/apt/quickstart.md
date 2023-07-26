@@ -19,26 +19,28 @@ Once everything is updated and ready, you can follow the below tasks to install:
 	```{.bash data-prompt="$"}
 	$ curl -O https://repo.percona.com/apt/percona-release_latest.generic_all.deb
 	```
+
 2. Install the downloaded package with `apt` as root or with `sudo`, and then refresh the local cache to update the package information:
 	```{.bash data-prompt="$"}
 	$ sudo apt install gnupg2 lsb-release ./percona-release_latest.generic_all.deb
 	$ sudo apt update
 	```
+
 3. Use `percona-release` to set up the repository for the Percona Server for MySQL 8.0 version:
 	```{.bash data-prompt="$"}
 	$ sudo percona-release setup ps80
 	```
 	You can check the repository setup for the Percona original release list in `/etc/apt/sources.list.d/percona-original-release.list`.
+
 4. Install the server package with the `percona-release` command:
 	```{.bash data-prompt="$"}
 	$ sudo apt install percona-server-server
 	```
 	For more information on `percona-release` command see [Configuring Percona Repositories](https://docs.percona.com/percona-software-repositories/percona-release.html).
-5. It should now be installed! Percona Server runs automatically after installation.  
-Learn how to [Stop/Run Percona Server](apt/run-stop.md).
+
+5. It should now be installed! Percona Server runs automatically after installation. To control the service, learn how to [Stop/Run Percona Server](apt/run-stop.md).
 
 !!! info "Storage engine option"
-
 	Percona Server for MySQL comes with **InnoDB storage engine**. If you prefer to install MyRocks instead, go to [MyRocks Installation Guide](https://docs.percona.com/percona-server/8.0/myrocks/install.html).
 
 	Starting with Percona Server for MySQL 8.0.28-19 (2022-05-12), the TokuDB storage engine is no longer supported. We have removed the storage engine from the installation packages and disabled the storage engine in our binary builds. For more information, see [TokuDB Introduction](https://docs.percona.com/percona-server/8.0/tokudb/tokudb_intro.html).
@@ -64,5 +66,5 @@ percona-release with the `testing` argument. Run the following command as root o
 $ sudo percona-release enable ps80 testing
 ```
 
-!!! warning
+!!! warning "Don't run pre-releases in production"
 	These pre-release builds should not be run in production. They may not contain all of the features available in the final release. The features may change without notice.

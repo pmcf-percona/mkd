@@ -1,4 +1,6 @@
 site_name: Percona Server for MySQL
+repo_url: https://github.com/pmcf-percona/mkd
+repo_name: percona/psmysql-docs
 theme:
   name: material
   logo: assets/percona-mark.svg
@@ -35,6 +37,8 @@ extra_css:
 plugins:
     - search
 extra:
+  version:
+    provider: mike
   consent:
     title: Cookie Consent
     description: >- 
@@ -99,3 +103,4 @@ nav:
     - Install via apt:
       - installation/apt/quickstart.md
       - installation/apt/run-stop.md
+      - installation/apt/uninstall.md
