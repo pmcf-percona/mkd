@@ -28,6 +28,8 @@ theme:
     # - navigation.tabs.sticky
     - navigation.top
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
 extra_css:
   - css/design.css
 plugins:
@@ -96,3 +98,4 @@ nav:
     - Quickstart Guides: installation/quickstart-guides.md
     - Install via apt:
       - installation/apt/quickstart.md
+      - installation/apt/run-stop.md

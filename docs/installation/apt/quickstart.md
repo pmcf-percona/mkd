@@ -34,13 +34,12 @@ Once everything is updated and ready, you can follow the below tasks to install:
 	$ sudo apt install percona-server-server
 	```
 	For more information on `percona-release` command see [Configuring Percona Repositories](https://docs.percona.com/percona-software-repositories/percona-release.html).
-5. It's installed! Head over to the Next Step section to continue exploring Percona Server for MySQL.
+5. It should now be installed! Percona Server runs automatically after installation.  
+Learn how to [Stop/Run Percona Server](apt/run-stop.md).
 
-This will be working, right?
+!!! info "Storage engine option"
 
-!!! info "Storage engine disclaimer"
-
-	Percona Server for MySQL comes with InnoDB storage engine. If you prefer to install MyRocks instead, go to [MyRocks Installation Guide](https://docs.percona.com/percona-server/8.0/myrocks/install.html).
+	Percona Server for MySQL comes with **InnoDB storage engine**. If you prefer to install MyRocks instead, go to [MyRocks Installation Guide](https://docs.percona.com/percona-server/8.0/myrocks/install.html).
 
 	Starting with Percona Server for MySQL 8.0.28-19 (2022-05-12), the TokuDB storage engine is no longer supported. We have removed the storage engine from the installation packages and disabled the storage engine in our binary builds. For more information, see [TokuDB Introduction](https://docs.percona.com/percona-server/8.0/tokudb/tokudb_intro.html).
 
@@ -65,4 +64,5 @@ percona-release with the `testing` argument. Run the following command as root o
 $ sudo percona-release enable ps80 testing
 ```
 
-These builds should not be run in production. This build may not contain all of the features available in the final release. The features may change without notice.
+!!! warning
+	These pre-release builds should not be run in production. They may not contain all of the features available in the final release. The features may change without notice.

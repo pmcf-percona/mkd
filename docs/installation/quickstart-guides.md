@@ -13,7 +13,7 @@ You can select from multiple easy-to-follow installation options, but **we recom
     
     Choose your package manager below to get access to a detailed step-by-step guide.
 
-    [Install via `apt` :material-arrow-right:](#){ .md-button } [Install via `yum` :material-arrow-right:](#){ .md-button }
+    [Install via `apt` :material-arrow-right:](apt/quickstart.md){ .md-button } [Install via `yum` :material-arrow-right:](#){ .md-button }
 
 === ":simple-kubernetes: Kubernetes"
 
