@@ -4,7 +4,7 @@ This guide covers how you can quickly get started using PA. This is applicable t
 
 ## Prerequisites
 
-[Docker](#) 1.12.6 or higher.
+[Docker](test.md) 1.12.6 or higher.
 
 ## System requirements
 
@@ -18,7 +18,7 @@ A minimum of 2 GB per monitored database node. The increase in memory usage is n
 
 ### Ports
 
-This is a list of [ports](#) used by the various components of PA.
+This is a list of [ports](test.md) used by the various components of PA.
 
 For PA to work correctly, your system’s firewall should allow TCP traffic on these ports (UDP is not needed).
 
@@ -30,7 +30,7 @@ For PA to work correctly, your system’s firewall should allow TCP traffic on t
 
 Here are the steps for installing the PA server:
 
-1. Set up Docker on [Mac](#) or [Linux](#).
+1. Set up Docker on [Mac](test.md) or [Linux](test.md).
 
 2. Install the PA server using `cURL` or `wget` as follows:
 
@@ -46,12 +46,12 @@ Here are the steps for installing the PA server:
 
 3. Log in to PA with the default login credentials provided after the installation is completed.
 
-For detailed instructions on installing the PA server with the other methods, see [Setting up PA](#).
+For detailed instructions on installing the PA server with the other methods, see [Setting up PA](test2.md).
 
 ## Add a database instance
 
 === "MySQL 5.7 or 8.0"
-    Before you add a MySQL database for monitoring you should have a [database account for PA](#).
+    Before you add a MySQL database for monitoring you should have a [database account for PA](test.md).
 
     Here are the steps to add a MySQL database for monitoring:
 
@@ -61,10 +61,10 @@ For detailed instructions on installing the PA server with the other methods, se
     4. Optional: Enter the information on the **Labels** and **Additional Options** section.
     5. Click **Add Service** at the bottom.
 
-    For detailed information, see [Adding a MySQL database for monitoring](#).
+    For detailed information, see [Adding a MySQL database for monitoring](test.md).
 
 === "MongoDB"
-    Before you add a MongoDB database for monitoring you should have a [database account for PA](#).
+    Before you add a MongoDB database for monitoring you should have a [database account for PA](test.md).
 
     Here are the steps to add a MongoDB database for monitoring:
 
@@ -74,10 +74,10 @@ For detailed instructions on installing the PA server with the other methods, se
     4. Optional: Enter the information in the **Labels** and **Additional Options** section.
     5. Click **Add Service** at the bottom.
 
-    For detailed information on adding a MongoDB database, see [Adding a MongoDB database for monitoring](#).
+    For detailed information on adding a MongoDB database, see [Adding a MongoDB database for monitoring](test.md).
 
 === "PostgreSQL"
-    Before you add a PostgreSQL database for monitoring you should have a [database account for PA](#).
+    Before you add a PostgreSQL database for monitoring you should have a [database account for PA](test.md).
 
     Here are the steps to add a PostgreSQL database for monitoring:
 
@@ -87,13 +87,13 @@ For detailed instructions on installing the PA server with the other methods, se
     4. Optional: Enter the information in the **Labels** and **Additional Options** section.
     5. Click **Add Service** at the bottom.
 
-    For detailed information on adding a PostgreSQL database, see [Adding a PostgreSQL database for monitoring](#).
+    For detailed information on adding a PostgreSQL database, see [Adding a PostgreSQL database for monitoring](test.md).
 
 === "Amazon RDS"
 
-    You can use PA for monitoring [Amazon RDS](#). By using the PA web interface, you connect to the Amazon RDS DB instance.
+    You can use PA for monitoring [Amazon RDS](test.md). By using the PA web interface, you connect to the Amazon RDS DB instance.
 
-    You only need to provide the [IAM user access key](#) or assign an [IAM role](#) and PA discovers the Amazon RDS DB instances available for monitoring.
+    You only need to provide the [IAM user access key](test.md) or assign an [IAM role](test.md) and PA discovers the Amazon RDS DB instances available for monitoring.
 
     Before you add Amazon instance for monitoring you should have the following:
 
@@ -126,8 +126,8 @@ Explore the following topics to gain a deeper understanding of PA:
 
 ## Contact us
 
-For free technical help, visit the Percona [Community Forum](#).
+For free technical help, visit the Percona [Community Forum](test.md).
 
-To report bugs or submit feature requests, open a [JIRA](#) ticket.
+To report bugs or submit feature requests, open a [JIRA](test.md) ticket.
 
-For paid [support](#) and [managed](#) or [consulting services](#), contact [Percona Sales](#).
+For paid [support](test.md) and [managed](test.md) or [consulting services](test.md), contact [Percona Sales](test.md).
