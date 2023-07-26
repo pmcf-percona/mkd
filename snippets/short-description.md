@@ -1,0 +1,1 @@
+Percona Server for MySQL is a high-performance, open-source drop-in replacement for MySQL. It allows you to enhance your database with superior performance, scalability, availability, and enhanced backups and is trusted by enterprises for demanding workloads.

@@ -1,0 +1,98 @@
+site_name: Percona Server for MySQL
+theme:
+  name: material
+  logo: assets/percona-mark.svg
+  favicon: assets/percona-fav.svg
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    - media: "(prefers-color-scheme: percona-light)"
+      scheme: percona-light
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: percona-dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - content.tabs.link
+extra_css:
+  - css/design.css
+plugins:
+    - search
+extra:
+  consent:
+    title: Cookie Consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Read more about <a class="reference external" href="https://www.percona.com/20180524-cookie-policy" target="_blank">Percona Cookie Policy</a>.
+    cookies:
+      analytics: Google Analytics 
+      github: Github
+    actions:
+      - manage
+      - accept
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thank you for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thank you for your feedback! Help us improve by following this <a href="..." target="_blank" rel="noopener">feedback form</a>.
+copyright: >
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets:
+      base_path: ["snippets"]
+      auto_append:
+        - services-banner.md
+  - pymdownx.details
+  - pymdownx.highlight:
+      use_pygments: true
+  - admonition
+
+# Page tree def
+nav:
+  - About:
+    - Percona Server for MySQL: index.md
+    - Features:
+      - feature/binary-log-disk-usage.md
+      - feature/extended-mysqlbinlog.md
+      - feature/extended-select-into.md
+    - Release Notes:
+      - release-note/2023/8.0.33-25.md
+      - 2023: 
+        - release-note/2023/8.0.32-24.md
+  - Installation:
+    - Quickstart Guides: installation/quickstart-guides.md
+    - Install via apt:
+      - installation/apt/quickstart.md
