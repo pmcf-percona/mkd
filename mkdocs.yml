@@ -1,6 +1,6 @@
-site_name: Products documentation
-# repo_url: https://github.com/pmcf-percona/mkd
-# repo_name: percona/psmysql-docs
+site_name: Percona Server for MySQL
+repo_url: https://github.com/pmcf-percona/mkd
+repo_name: percona/psmysql-docs
 theme:
   name: material
   logo: assets/percona-mark.svg
@@ -27,12 +27,18 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    # - navigation.tabs
+    - navigation.tabs
+    # Header navigation to stick to top when scrolling
     # - navigation.tabs.sticky
+    # Group sidebar by clusters instead of drowpdowns
+    # - navigation.sections
     - navigation.top
-    - content.tabs.link
+    # To choose wether the tabs should remmeber its selection and cross-link with other tabs that have the same label
+    # - content.tabs.link
     - content.code.copy
     - content.code.annotate
+    - content.action.edit
+    - content.action.view
 extra_css:
   - css/design.css
 plugins:
@@ -80,55 +86,88 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets:
       base_path: ["snippets"]
-      # auto_append:
-      #   - services-banner.md
+      auto_append:
+        - services-banner.md
   - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
   - admonition
+  - md_in_html
+  - toc:
+      permalink: true
 
 # Page tree def
 nav:
-  - Product Alpha:
-    - Quickstart Guide: install-alpha.md
-    - Setting up: test.md
-    - Get Started: test.md
-    - How to: test.md
-    - Details: test.md
-    - FAQ: test.md
-    - Release Notes: test.md
-    - Reference: test.md
-  - Product Beta:
-    - Quickstart Guides: install-beta.md
-    - Installation:
-      - Package Manager:
-        - Install using `apt`: test.md
-        - Install using `yum`: test.md
-    - Details: test.md
-    - FAQ: test.md
-    - Release Notes: test.md
-    - Reference: test.md
-  - Product Gamma:
-    - test.md
-  - Product Delta:
-    - test.md
-  - Product Epsilon:
-    - test.md
-  - About: test.md
-# nav:
-#   - About:
-#     - Percona Server for MySQL: index.md
-#     - Features:
-#       - feature/binary-log-disk-usage.md
-#       - feature/extended-mysqlbinlog.md
-#       - feature/extended-select-into.md
-#     - Release Notes:
-#       - release-note/2023/8.0.33-25.md
-#       - 2023: 
-#         - release-note/2023/8.0.32-24.md
-#   - Installation:
-#     - Quickstart Guides: installation/quickstart-guides.md
-#     - Install via apt:
-#       - installation/apt/quickstart.md
-#       - installation/apt/run-stop.md
-#       - installation/apt/uninstall.md
+  - About:
+    - Percona Server for MySQL: index.md
+    - Features:
+      - feature/binary-log-disk-usage.md
+      - feature/extended-mysqlbinlog.md
+      - feature/extended-select-into.md
+      - Etc...: dummy.md
+    - Release Notes:
+      - release-note/2023/8.0.33-25.md
+      - 2023: 
+        - release-note/2023/8.0.32-24.md
+        - Release 2: dummy.md
+        - Etc...: dummy.md
+      - 2022:
+        - Release 1: dummy.md
+        - Release 2: dummy.md
+        - Etc...: dummy.md
+  - Installation:
+    - Quickstart Guides: installation/quickstart-guides.md
+    - Install via apt:
+      - installation/apt/quickstart.md
+      - installation/apt/run-stop.md
+      - installation/apt/pinning.md
+      - installation/apt/uninstall.md
+    - Install via yum:
+      - Quickstart: installation/dummy.md
+      - Run/Stop: installation/dummy.md
+      - Uninstall: installation/dummy.md
+    - Kubernetes:
+      - Quickstart: installation/dummy.md
+    - Docker:
+      - Quickstart: installation/dummy.md
+      - Environment Variables: installation/dummy.md
+    - Manual Download:
+      - Quickstart: installation/dummy.md
+      - Available Files list: installation/dummy.md
+    - Post-installation tips:
+      - Post-installation Guide: installation/dummy.md
+      - Binary Logs and Replication improvements: installation/dummy.md
+      - Working with AppArmor: installation/dummy.md
+      - Working with SELinux: installation/dummy.md
+    - Upgrade:
+      - Upgrade: installation/dummy.md
+    - Downgrade:
+      - Downgrade: installation/dummy.md
+  - How to:
+    - Basics:
+      - how-to/create-a-database.md
+      - Show databases: how-to/dummy.md
+      - Set the default database: how-to/dummy.md
+      - Create a table: how-to/dummy.md
+      - Show tables: how-to/dummy.md
+      - Insert rows: how-to/dummy.md
+      - Create an index: how-to/dummy.md
+      - Show indexes: how-to/dummy.md
+      - Query a table: how-to/dummy.md
+      - Update rows: how-to/dummy.md
+      - Delete rows: how-to/dummy.md
+      - Drop a table: how-to/dummy.md
+      - Drop a database: how-to/dummy.md
+      - See also: how-to/dummy.md
+    - Advanced:
+      - Guide 1: how-to/dummy.md
+      - Guide 2: how-to/dummy.md
+      - Etc...: how-to/dummy.md
+    - Percona-exclusive:
+      - Keyring:
+        - Plugin Guide 1: how-to/dummy.md
+        - Plugin Guide 2: how-to/dummy.md
+        - Etc...: how-to/dummy.md
+      - Feature 2 Guide: how-to/dummy.md
+      - Feature 3 Guide: how-to/dummy.md
+      - Etc...: how-to/dummy.md

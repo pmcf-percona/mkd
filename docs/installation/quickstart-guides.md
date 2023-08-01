@@ -31,7 +31,7 @@ You can select from multiple easy-to-follow installation options, but **we recom
 
     [View Docker Guide :material-arrow-right:](#){ .md-button }
 
-=== ":octicons-download-16:  Manual Installation"
+=== ":octicons-download-16:  Manual Download"
 
     If you prefer to start with a specific version or implement it offline, check out the link below for a step-by-step guide and get access to the downloads directory.
 

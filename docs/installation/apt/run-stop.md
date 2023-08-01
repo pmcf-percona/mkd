@@ -22,6 +22,9 @@ If stopped, you can also manually start Percona Server by entering:
 $ sudo service mysql start
 ```
 
+??? info "You can either use `service` or `systemctl`"
+    Debian 9.0 (stretch) and Ubuntu 18.04 LTS (bionic) come with [systemd](http://freedesktop.org/wiki/Software/systemd/) as the default system and service manager. You can invoke all the above commands with `systemctl` instead of `service`. Currently, both are supported.
+
 ## Stop & Restart
 
 You can stop the service by entering:
@@ -35,9 +38,6 @@ To restart the service:
 ```bash
 $ sudo service mysql restart
 ```
-
-??? info "You can either use `service` or `systemctl`"
-    Debian 9.0 (stretch) and Ubuntu 18.04 LTS (bionic) come with [systemd](http://freedesktop.org/wiki/Software/systemd/) as the default system and service manager. You can invoke all the above commands with `systemctl` instead of `service`. Currently, both are supported.
 
 ## Files & Configuration
 
