@@ -40,18 +40,22 @@
     --sky500: #1486FF;
     --sky400: #439EFF;
     --sky300: #62AEFF;
+    /* mkdocs root override */
+    --md-primary-fg-color--dark: var(--night400);
 }
 [data-md-color-scheme="percona-light"] {
     /* Primitives */
     --md-typeset-a-color: var(--sky650);
     --md-primary-fg-color: var(--sky700);
     --md-accent-fg-color: var(--sky650);
+    
     /* Footer */
     --md-footer-fg-color: var(--md-typeset-color);
     --md-footer-fg-color--light: var(--md-default-fg-color--light);
     --md-footer-fg-color--lighter: var(--md-default-fg-color--lighter);
     --md-footer-bg-color: var(--night50);
     --md-footer-bg-color--dark: var(--night50);
+    
 }
 [data-md-color-scheme="slate"] {
     /* Primitives */
@@ -183,10 +187,11 @@
     box-shadow: none;
 }
 .md-tabs__link {
-    font-size: 0.6rem;
+    font-size: 0.67rem;
+}
+.md-tabs__link--active {
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    border-bottom: 0.15em solid currentColor;
 }
 
 /* Custom Banner */

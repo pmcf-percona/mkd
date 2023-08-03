@@ -33,6 +33,8 @@ theme:
     # Group sidebar by clusters instead of drowpdowns
     # - navigation.sections
     - navigation.top
+    # Auto hiding the whole header after scrolling down
+    # - header.autohide
     # To choose wether the tabs should remmeber its selection and cross-link with other tabs that have the same label
     # - content.tabs.link
     - content.code.copy
@@ -172,13 +174,63 @@ nav:
       - Feature 3 Guide: how-to/dummy.md
       - Etc...: how-to/dummy.md
   - Monitoring:
-    - Audit log plugin: how-to/dummy.md
-    - Jemalloc memory allocation profiling: how-to/dummy.md
-    - User statistics: how-to/dummy.md
-    - Slow query log: how-to/dummy.md
-    - Process list: how-to/dummy.md
-    - Misc. INFORMATION_SCHEMA tables: how-to/dummy.md
+    - Audit log plugin: monitoring/dummy.md
+    - Jemalloc memory allocation profiling: monitoring/dummy.md
+    - User statistics: monitoring/dummy.md
+    - Slow query log: monitoring/dummy.md
+    - Process list: monitoring/dummy.md
+    - Misc. INFORMATION_SCHEMA tables: monitoring/dummy.md
     - Percona Monitoring and Management:
-      - How to install PMM: how-to/dummy.md
-      - How to setup MySQL monitoring: how-to/dummy.md
-      - Etc...: how-to/dummy.md
+      - How to install PMM: monitoring/dummy.md
+      - How to setup MySQL monitoring: monitoring/dummy.md
+      - Etc...: monitoring/dummy.md
+  - Backup and Restore:
+    - Overview: backup-and-restore/dummy.md
+    - Backup locks: backup-and-restore/dummy.md
+    - Extended mysqldump: backup-and-restore/dummy.md
+    - Start transaction with consistent snapshot: backup-and-restore/dummy.md
+  - Security:
+    - LDAP features:
+      - Using LDAP: security/dummy.md
+      - Authentication: security/dummy.md
+    - Data masking: security/dummy.md
+    - PAM authentication: security/dummy.md
+    - SSL improvements: security/dummy.md
+    - Server variables: security/dummy.md
+    - FIDO authentication: security/dummy.md
+    - Encryption functions: security/dummy.md
+    - Data-at-rest encryption: security/dummy.md
+  - Storage Engines:
+    - Percona XtraDB:
+      - About: storage-engine/dummy.md
+      - Improved MEMORY: storage-engine/dummy.md
+      - Improved InnoDB I/O: storage-engine/dummy.md
+      - Etc...: storage-engine/dummy.md
+    - Percona MyRocks:
+      - About: storage-engine/dummy.md
+      - Installation: storage-engine/dummy.md
+      - Features: storage-engine/dummy.md
+      - Etc...: storage-engine/dummy.md
+    - TokuDB:
+      - About: storage-engine/dummy.md
+      - Installation: storage-engine/dummy.md
+      - Features: storage-engine/dummy.md
+      - Etc...: storage-engine/dummy.md
+  - Troubleshoot:
+    - Use PMM Advisors: troubleshoot-and-qa/dummy.md
+    - Too many connections warning: troubleshoot-and-qa/dummy.md
+    - Etc...: troubleshoot-and-qa/dummy.md
+    - Common questions:
+      - How do I connect the dots: troubleshoot-and-qa/dummy.md
+      - How to include XYZ in parameter ABC: troubleshoot-and-qa/dummy.md
+      - Etc...: troubleshoot-and-qa/dummy.md
+  - Reference:
+    - Variables introduced in PS 8.0: reference/dummy.md
+    - Features by PS release: reference/dummy.md
+    - Feature comparison: reference/dummy.md
+    - Versioning: reference/dummy.md
+    - Development: reference/dummy.md
+    - Trademark policy: reference/dummy.md
+    - Information Schema tables: reference/dummy.md
+    - Copyright and Licencing: reference/dummy.md
+    - Glossary: reference/dummy.md
