@@ -171,3 +171,14 @@ nav:
       - Feature 2 Guide: how-to/dummy.md
       - Feature 3 Guide: how-to/dummy.md
       - Etc...: how-to/dummy.md
+  - Monitoring:
+    - Audit log plugin: how-to/dummy.md
+    - Jemalloc memory allocation profiling: how-to/dummy.md
+    - User statistics: how-to/dummy.md
+    - Slow query log: how-to/dummy.md
+    - Process list: how-to/dummy.md
+    - Misc. INFORMATION_SCHEMA tables: how-to/dummy.md
+    - Percona Monitoring and Management:
+      - How to install PMM: how-to/dummy.md
+      - How to setup MySQL monitoring: how-to/dummy.md
+      - Etc...: how-to/dummy.md
