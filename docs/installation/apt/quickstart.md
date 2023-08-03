@@ -5,7 +5,7 @@ title: Quickstart
 
 Specific information on the supported platforms, products, and versions is described in [Percona Software and Platform Lifecycle](https://www.percona.com/services/policies/percona-software-platform-lifecycle#mysql).
 
-## Install the latest version {.power-list}
+## Install the latest version {.power-number}
 
 Before starting, we advise updating the `apt` repositories and installing `curl` download utility to fetch the package. If you want to fetch the package manually, follow this guide instead: [Manual Installation](#).
 ```{.bash data-prompt="$"}
