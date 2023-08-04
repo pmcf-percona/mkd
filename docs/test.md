@@ -1,3 +1,0 @@
-# Oh no! :thinking: A dead end...
-
-This is not what was expected with this test... But now we know how to improve it! Thank you for participating! Your help is very much appreciated!
