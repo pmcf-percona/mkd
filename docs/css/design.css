@@ -110,6 +110,10 @@
 [dir=rtl] .md-header__title {
     margin-right: 0;
 }
+.md-tabs .md-tabs__link {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 
 /* Footer */
 .md-copyright__highlight {
