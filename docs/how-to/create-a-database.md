@@ -13,3 +13,9 @@ Database names must follow these identifier rules. To avoid an error in case the
 ```bash
 CREATE DATABASE IF NOT EXISTS example-database
 ```
+
+## Next steps
+
+Continue the Percona Server learning journey. Learn how to control databases with ease in MySQL.
+
+[Show Databases :material-arrow-right:](#){ .md-button }

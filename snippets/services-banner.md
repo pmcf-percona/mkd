@@ -1,6 +1,9 @@
-<div data-banner>
-<h2 class="title">Get expert help</h2>
-<p>If you need assistance, visit the community forum for comprehensive and free database knowledge, or contact our Percona Database Experts for professional support and services.</p>
+<div data-banner markdown>
+
+## Get expert help { .title }
+
+If you need assistance, visit the community forum for comprehensive and free database knowledge, or contact our Percona Database Experts for professional support and services.
+
 <div class="actions">
     <a href="#">
         <span class="twemoji">
@@ -19,4 +22,5 @@
         Get a Percona Expert
     </a>
 </div>
+
 </div>
