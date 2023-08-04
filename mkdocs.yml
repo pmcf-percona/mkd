@@ -146,6 +146,21 @@ nav:
     - Downgrade:
       - Downgrade: installation/dummy.md
   - How to:
+    - Prepare for production:
+      - Overview: how-to/overview.md
+      - Hardware Specifications: how-to/dummy.md
+      - Operating System Compatibility: how-to/dummy.md
+      - Memory and Storage: how-to/dummy.md
+      - Network Configuration: how-to/dummy.md
+      - Backup and Disaster Recovery: how-to/dummy.md
+      - Performance Tuning: how-to/dummy.md
+      - Scaling Techniques: how-to/dummy.md
+      - Monitoring and Alerting: how-to/dummy.md
+      - Security Considerations: how-to/dummy.md
+      - High Availability: how-to/dummy.md
+      - Configuration Best Practices: how-to/dummy.md
+      - Automated Deployment: how-to/dummy.md
+      - User Privileges and Permissions: how-to/dummy.md
     - Basics:
       - how-to/create-a-database.md
       - Show databases: how-to/dummy.md
@@ -173,21 +188,6 @@ nav:
       - Feature 2 Guide: how-to/dummy.md
       - Feature 3 Guide: how-to/dummy.md
       - Etc...: how-to/dummy.md
-    - Prepare for production:
-      - Overview: how-to/overview.md
-      - Hardware Specifications: how-to/dummy.md
-      - Operating System Compatibility: how-to/dummy.md
-      - Memory and Storage: how-to/dummy.md
-      - Network Configuration: how-to/dummy.md
-      - Backup and Disaster Recovery: how-to/dummy.md
-      - Performance Tuning: how-to/dummy.md
-      - Scaling Techniques: how-to/dummy.md
-      - Monitoring and Alerting: how-to/dummy.md
-      - Security Considerations: how-to/dummy.md
-      - High Availability: how-to/dummy.md
-      - Configuration Best Practices: how-to/dummy.md
-      - Automated Deployment: how-to/dummy.md
-      - User Privileges and Permissions: how-to/dummy.md
   - Monitoring:
     - Audit log plugin: monitoring/dummy.md
     - Jemalloc memory allocation profiling: monitoring/dummy.md

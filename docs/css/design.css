@@ -143,7 +143,7 @@
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05) inset;
 }
 .md-content .md-button {
-    margin: 0 0.5em 0.5em 0;
+    margin: 0 0.5em 1em 0;
 }
 .md-typeset .tabbed-labels>label {
     font-size: 0.75rem;
@@ -202,7 +202,7 @@
     /* border: 0.05rem solid var(--md-typeset-table-color); */
     border-radius: 0.2rem;
 }
-h2.title {
+[data-banner] .title {
     font-weight: normal;
     margin: 0;
 }

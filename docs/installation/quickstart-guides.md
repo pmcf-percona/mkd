@@ -13,7 +13,7 @@ You can select from multiple easy-to-follow installation options, but **we recom
     
     Choose your package manager below to get access to a detailed step-by-step guide.
 
-    [Install via `apt` :material-arrow-right:](apt/quickstart.md){ .md-button } [Install via `yum` :material-arrow-right:](#){ .md-button }
+    [Install via `apt` :material-arrow-down:](#install-via-apt){ .md-button .md-button--primary } [Install via `yum` :material-arrow-right:](#){ .md-button }
 
 === ":simple-kubernetes: Kubernetes"
 
@@ -36,3 +36,25 @@ You can select from multiple easy-to-follow installation options, but **we recom
     If you prefer to start with a specific version or implement it offline, check out the link below for a step-by-step guide and get access to the downloads directory.
 
     [View Manual Installation Guide :material-arrow-right:](#){ .md-button }
+
+---
+
+## Install via `apt`
+
+--8<-- "quickstart.md"
+
+## Next steps
+
+Want to quickly test Percona Server for MySQL? Navigate into our easy-to-follow guide below, so you can understand the power of fast and performant databases with Percona.
+
+[Create a database :material-arrow-right:](../how-to/create-a-database.md){ .md-button }
+
+Here are a few other useful topics to continue venturing into Percona Server:
+
+- Follow our [Prepare for production guide](../how-to/overview.md) to run a robust and scalable enterprise-grade database.
+
+- Check if you want to [change the storage engine](dummy.md).
+
+- Always a good idea to [improve checksums speed](dummy.md) before anything.
+
+- You can also [install a pre-release](dummy.md) to test things out.
