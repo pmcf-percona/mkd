@@ -29,7 +29,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     # Header navigation to stick to top when scrolling
-    - navigation.tabs.sticky
+    # - navigation.tabs.sticky
     # Group sidebar by clusters instead of drowpdowns
     # - navigation.sections
     - navigation.top
