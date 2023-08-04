@@ -197,12 +197,12 @@
 /* Custom Banner */
 [data-banner] {
     padding: 1.5em;
-    margin: 4em 0;
+    margin: 3em 0;
     border: 0.05rem solid var(--md-default-fg-color--lighter);
     /* border: 0.05rem solid var(--md-typeset-table-color); */
     border-radius: 0.2rem;
 }
-[data-banner] .title {
+h2.title {
     font-weight: normal;
     margin: 0;
 }

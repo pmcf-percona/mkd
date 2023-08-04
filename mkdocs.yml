@@ -173,6 +173,21 @@ nav:
       - Feature 2 Guide: how-to/dummy.md
       - Feature 3 Guide: how-to/dummy.md
       - Etc...: how-to/dummy.md
+    - Prepare for production:
+      - Overview: how-to/overview.md
+      - Hardware Specifications: how-to/dummy.md
+      - Operating System Compatibility: how-to/dummy.md
+      - Memory and Storage: how-to/dummy.md
+      - Network Configuration: how-to/dummy.md
+      - Backup and Disaster Recovery: how-to/dummy.md
+      - Performance Tuning: how-to/dummy.md
+      - Scaling Techniques: how-to/dummy.md
+      - Monitoring and Alerting: how-to/dummy.md
+      - Security Considerations: how-to/dummy.md
+      - High Availability: how-to/dummy.md
+      - Configuration Best Practices: how-to/dummy.md
+      - Automated Deployment: how-to/dummy.md
+      - User Privileges and Permissions: how-to/dummy.md
   - Monitoring:
     - Audit log plugin: monitoring/dummy.md
     - Jemalloc memory allocation profiling: monitoring/dummy.md
@@ -190,6 +205,7 @@ nav:
     - Extended mysqldump: backup-and-restore/dummy.md
     - Start transaction with consistent snapshot: backup-and-restore/dummy.md
   - Security:
+    - Overview: security/overview.md
     - LDAP features:
       - Using LDAP: security/dummy.md
       - Authentication: security/dummy.md
@@ -217,10 +233,17 @@ nav:
       - Features: storage-engine/dummy.md
       - Etc...: storage-engine/dummy.md
   - Troubleshoot:
-    - Use PMM Advisors: troubleshoot-and-qa/dummy.md
-    - Too many connections warning: troubleshoot-and-qa/dummy.md
+    - troubleshoot-and-qa/overview.md
+    - Installation and Configuration: troubleshoot-and-qa/dummy.md
+    - Performance Bottlenecks: troubleshoot-and-qa/dummy.md
+    - Data Integrity and Recovery: troubleshoot-and-qa/dummy.md
+    - Networking and Connectivity: troubleshoot-and-qa/dummy.md
+    - Query Optimization: troubleshoot-and-qa/dummy.md
+    - Replication and High Availability: troubleshoot-and-qa/dummy.md
+    - Security and Access Control: troubleshoot-and-qa/dummy.md
     - Etc...: troubleshoot-and-qa/dummy.md
-    - Common questions:
+    - Questions & Answers:
+      - Q&A Index: troubleshoot-and-qa/dummy.md
       - How do I connect the dots: troubleshoot-and-qa/dummy.md
       - How to include XYZ in parameter ABC: troubleshoot-and-qa/dummy.md
       - Etc...: troubleshoot-and-qa/dummy.md
