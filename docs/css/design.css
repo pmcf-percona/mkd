@@ -226,6 +226,7 @@
     display: inline-block;
     margin: 0.5em 1.5em 0 0;
 }
+[data-banner] > :only-child,
 [data-banner] .actions a:first-of-type {
     margin-top: 0;
 }
