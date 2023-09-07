@@ -8,4 +8,4 @@ If you need assistance, visit the community forum for comprehensive and free dat
 
 [:material-forum-outline: Community Forum](#) [:percona-logo: Get a Percona Expert](#)
 
-</div>
+</div></div>
