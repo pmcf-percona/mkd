@@ -260,3 +260,15 @@ nav:
     - Information Schema tables: reference/dummy.md
     - Copyright and Licencing: reference/dummy.md
     - Glossary: reference/dummy.md
+  - Installing PMM:
+    - Quickstart Guide:
+      - Step 1 — Install PMM Server:
+        - Introduction: wizard/step1.md
+        - Docker (easy-install): reference/dummy.md
+        - Docker: wizard/install-pmm-server/docker.md
+        - Podman: reference/dummy.md
+        - Helm: reference/dummy.md
+        - Amazon AWS: reference/dummy.md
+        - Virtual machine: reference/dummy.md
+      - Step 2 — Install PMM Client:
+        - Introduction: wizard/step2.md

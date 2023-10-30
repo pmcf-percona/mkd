@@ -241,6 +241,12 @@
 [data-banner] a [class*="moji"] svg {
     width: 1.3333em;
 }
+[data-banner="logo"] > p:first-child {
+    margin-top: 0;
+}
+[data-banner="logo"] > p:first-child [class*="moji"] {
+    font-size: 4em;
+}
 [data-grid] {
     display: flex;
     flex-wrap: wrap;
