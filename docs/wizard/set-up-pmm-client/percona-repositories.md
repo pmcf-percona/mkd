@@ -4,7 +4,7 @@ Use the Percona Repositories as it's a simplified, hassle-free process that will
 
 ## Install PMM Client
 
-=== "`apt`"
+=== "apt"
 
     If you're on Debian, Ubuntu or any other Debian-based system, follow these commands to install PMM Client package.
     {.power-number}
@@ -31,7 +31,7 @@ Use the Percona Repositories as it's a simplified, hassle-free process that will
         pmm-admin --version
         ```
 
-=== "`yum`"
+=== "yum"
 
     If you're on Red Hat Enterprise Linux, CentOS or just using `yum`, follow these commands to install PMM Client package.
     {.power-number}

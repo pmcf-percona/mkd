@@ -28,15 +28,11 @@
 
     asd
     
-=== ":simple-linux: Linux"
+=== ":simple-linux: Connect to Linux only"
 
     asd
     
-=== ":material-database-export: External"
-
-    asd
-    
-=== ":material-cloud-download: Remote Monitoring"
+=== ":material-database-export: Others/Unsupported"
 
     asd
     

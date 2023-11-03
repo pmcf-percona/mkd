@@ -26,8 +26,6 @@ Select where your database is located so you can choose the best way to set up a
     
     [Manual Installation :material-arrow-right:](#){ .md-button }
 
-    
-
 === ":simple-amazonaws: RDS/Aurora"
 
     Links here...
