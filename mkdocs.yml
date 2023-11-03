@@ -267,7 +267,7 @@ nav:
     - Glossary: reference/dummy.md
   - Installing PMM:
     - Quickstart Guide:
-      - 1 — Install PMM Server:
+      - Step 1 — Install PMM Server:
         - wizard/install-pmm-server/index.md
         - Docker Easy-install: wizard/install-pmm-server/docker-easy-install.md
         - Docker: wizard/install-pmm-server/docker.md
@@ -275,12 +275,12 @@ nav:
         - Helm: reference/dummy.md
         - Amazon AWS: reference/dummy.md
         - Virtual machine: reference/dummy.md
-      - 2 — Set up PMM Client:
+      - Step 2 — Set up PMM Client:
         - wizard/set-up-pmm-client/index.md
         - Percona Repositories: wizard/set-up-pmm-client/percona-repositories.md
         - Docker: reference/dummy.md
         - Manual Installation: reference/dummy.md
-      - 3 — Connect Databases:
+      - Step 3 — Connect Databases:
         - wizard/connect-databases/index.md
         - RDS/Aurora: reference/dummy.md
         - Google Cloud: reference/dummy.md
