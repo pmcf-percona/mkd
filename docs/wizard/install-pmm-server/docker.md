@@ -1,4 +1,4 @@
-# Install PMM Server on our Docker image
+# Install PMM Server on a Docker image
 
 !!! note
     Before running PMM Server on our Docker image make sure you have Docker 1.12.6 or higher.
@@ -58,11 +58,11 @@ You 3 options on how you can store data from your PMM Server. Select the method 
 
     Instructions here...
 
-## Next step: Install PMM Client
+## Next step: Set up PMM Client
 
 Now that you have PMM Server set up we need to go to your databases and add PMM Client so that PMM Server can communicate with your databases. Learn how in the button below.
 
-[Install PMM Client :material-arrow-right:](#){ .md-button .md-button--primary }
+[Set up PMM Client :material-arrow-right:](../set-up-pmm-client/index.md){ .md-button .md-button--primary }
 
 If you want to try something else before anything, here are some other ideas for next steps:
 

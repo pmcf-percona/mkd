@@ -25,6 +25,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   features:
+    - navigation.indexes
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
@@ -77,7 +78,11 @@ extra:
 copyright: >
   <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
 markdown_extensions:
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -262,13 +267,22 @@ nav:
     - Glossary: reference/dummy.md
   - Installing PMM:
     - Quickstart Guide:
-      - Step 1 — Install PMM Server:
-        - Introduction: wizard/step1.md
-        - Docker (easy-install): reference/dummy.md
+      - 1 — Install PMM Server:
+        - wizard/install-pmm-server/index.md
+        - Docker Easy-install: wizard/install-pmm-server/docker-easy-install.md
         - Docker: wizard/install-pmm-server/docker.md
         - Podman: reference/dummy.md
         - Helm: reference/dummy.md
         - Amazon AWS: reference/dummy.md
         - Virtual machine: reference/dummy.md
-      - Step 2 — Install PMM Client:
-        - Introduction: wizard/step2.md
+      - 2 — Set up PMM Client:
+        - wizard/set-up-pmm-client/index.md
+        - Percona Repositories: wizard/set-up-pmm-client/percona-repositories.md
+        - Docker: reference/dummy.md
+        - Manual Installation: reference/dummy.md
+      - 3 — Connect Databases:
+        - wizard/connect-databases/index.md
+        - RDS/Aurora: reference/dummy.md
+        - Google Cloud: reference/dummy.md
+        - Azure: reference/dummy.md
+        - Remote Monitoring: reference/dummy.md
