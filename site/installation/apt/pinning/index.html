@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../pinning/">
+        <link rel="prev" href="../run-stop/">
       
       
-        <link rel="next" href="../../dummy/">
+        <link rel="next" href="../uninstall/">
       
       <link rel="icon" href="../../../assets/percona-fav.svg">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
     
     
       
-        <title>Uninstall - Percona Server for MySQL</title>
+        <title>apt Pinning - Percona Server for MySQL</title>
       
     
     
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#uninstall-percona-server-for-mysql" class="md-skip">
+        <a href="#apt-pinning-the-percona-server-for-mysql-80-packages" class="md-skip">
           Skip to content
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Uninstall
+              apt Pinning
             
           </span>
         </div>
@@ -957,20 +957,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../pinning/" class="md-nav__link">
-        apt Pinning
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -983,12 +969,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Uninstall
+          apt Pinning
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Uninstall
+        apt Pinning
       </a>
       
         
@@ -1017,6 +1003,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uninstall/" class="md-nav__link">
+        Uninstall
+      </a>
     </li>
   
 
@@ -4243,7 +4243,7 @@
                   
 
   
-    <a href="https://github.com/pmcf-percona/mkd/edit/master/docs/installation/apt/uninstall.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/pmcf-percona/mkd/edit/master/docs/installation/apt/pinning.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -4252,40 +4252,22 @@
     
       
     
-    <a href="https://github.com/pmcf-percona/mkd/raw/master/docs/installation/apt/uninstall.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/pmcf-percona/mkd/raw/master/docs/installation/apt/pinning.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="uninstall-percona-server-for-mysql">Uninstall Percona Server for MySQL<a class="headerlink" href="#uninstall-percona-server-for-mysql" title="Permanent link">&para;</a></h1>
-<p>To uninstall Percona Server for MySQL you’ll need to remove all the installed packages. Removing packages with <code>apt remove</code> does not remove the configuration and data files.</p>
-<p class="power-number">Removing the packages with <code>apt purge</code> does remove the packages with configuration files and data files (all the databases). Depending on your needs, you can choose which command better suits you.</p>
-<ol>
-<li>
-<p>First, stop the Percona Server for MySQL service:
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>service<span class="w"> </span>mysql<span class="w"> </span>stop
-</code></pre></div></p>
-</li>
-<li>
-<p>Then remove the packages using your preferred method below:</p>
-<ul>
-<li>
-<p><strong>Either remove the packages.</strong>
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>remove<span class="w"> </span>percona-server<span class="se">\</span>
+<h1 id="apt-pinning-the-percona-server-for-mysql-80-packages"><code>apt</code> pinning the Percona Server for MySQL 8.0 packages<a class="headerlink" href="#apt-pinning-the-percona-server-for-mysql-80-packages" title="Permanent link">&para;</a></h1>
+<p>Pinning allows you to stay on a release and get packages from a different version. In some cases, you can pin selected packages and avoid accidentally upgrading all the packages. </p>
+<p>The pinning takes place in the <code>preference</code> file. To pin a package, set the <code>Pin-Priority</code> to higher numbers. </p>
+<p>Make a new file <code>/etc/apt/preferences.d/00percona.pref</code>. For example, add the following to the <code>preference</code> file:</p>
+<div class="highlight"><pre><span></span><code>Package: 
+Pin: release o=Percona Development Team
+Pin-Priority: 1001
 </code></pre></div>
-    <strong>This will leave the data files</strong> (databases, tables, logs, configuration, etc.) behind. If you don’t need them, you must remove them manually.</p>
-</li>
-<li>
-<p><strong>Or purge the packages and delete data files.</strong>
-    <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>purge<span class="w"> </span>percona-server<span class="se">\</span>
-</code></pre></div>
-    <i warning><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14h-2V9h2m0 9h-2v-2h2M1 21h22L12 2 1 21Z"/></svg></span> Warning:</i> This command removes all the packages <strong>and deletes all the data files</strong> (databases, tables, logs, and so on.).</p>
-</li>
-</ul>
-</li>
-</ol>
+<p>For more information about the pinning, you can check the official <a href="https://wiki.debian.org/AptConfiguration?action=show&amp;redirect=AptPreferences">debian wiki</a>.</p>
 <div data-banner="data-banner">
 <h2 class="title" id="get-expert-help">Get expert help<a class="headerlink" href="#get-expert-help" title="Permanent link">&para;</a></h2>
 <p>If you need assistance, visit the community forum for comprehensive and free database knowledge, or contact our Percona Database Experts for professional support and services.</p>

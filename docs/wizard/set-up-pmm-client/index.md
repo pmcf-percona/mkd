@@ -2,42 +2,30 @@
 
 To make Percona Monitoring and Management (PMM) work properly a **PMM Client** needs to be set up in your database environment. This client acts as the messenger, relaying back the key performance insights from your database to the PMM Server.
 
-Up next, we'll walk you through the installation steps to set up PMM Client.
+## Select your database technology
 
-Please select your database technology below.
+Select the database technology you're using so we can direct you to the best set up of your PMM Client and start collecting data signals back to PMM Server.
 
-## Select your database location
+=== ":simple-mysql: MySQL"
 
-Select where your database is located so you can choose the best way to set up a PMM Client alongside your database and collect data signals back to PMM Server.
+    MySQL links here...
 
-=== ":material-server-network: Self-hosted/EC2"
+=== ":simple-postgresql: PostgreSQL"
 
-    Opting for a self-hosted, be it bare-metal, virtual machine, etc., or even for an Amazon EC2 setup gives you a more hands-on control over your environment, making it a go-to choice for those who prefer a more personalized setup.
+    PostgreSQL links here...
 
-    **Using Percona Repositories (Recommended)** — a streamlined setup process, with the added assurance that you're always using the latest, tested, and supported version.
+=== ":simple-mongodb: MongoDB"
+
+    MongoDB links here...
+
+=== "ProxySQL"
+
+    ProxySQL links here...
     
-    [Install using Percona Repositories :material-arrow-right:](percona-repositories.md){ .md-button .md-button--primary }
+=== "HAproxy"
 
-    **Install on a Docker image** — A convenient way to run PMM Client as a preconfigured Docker container.
-    
-    [Install on a Docker image :material-arrow-right:](#){ .md-button }
+    HAproxy links here...
 
-    **Manual Installation** — By downloading the files you can install at your pace and even in an environment with restricted internet access.
-    
-    [Manual Installation :material-arrow-right:](#){ .md-button }
+=== "Others"
 
-=== ":simple-amazonaws: RDS/Aurora"
-
-    Links here...
-
-=== ":material-google-cloud: Google Cloud"
-
-    Links here...
-
-=== ":simple-microsoftazure: Azure"
-
-    Links here...
-
-=== ":material-help-network: Other"
-
-    Links here...
+    Others' links here...

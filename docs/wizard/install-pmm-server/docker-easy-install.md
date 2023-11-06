@@ -1,4 +1,4 @@
-# Install PMM Server with script
+# Easy-install PMM Server
 
 The following steps will guide you through the installation of PMM Server:
 {.power-number}
