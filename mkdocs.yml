@@ -196,17 +196,6 @@ nav:
       - Feature 2 Guide: how-to/dummy.md
       - Feature 3 Guide: how-to/dummy.md
       - Etc...: how-to/dummy.md
-  - Monitoring:
-    - Audit log plugin: monitoring/dummy.md
-    - Jemalloc memory allocation profiling: monitoring/dummy.md
-    - User statistics: monitoring/dummy.md
-    - Slow query log: monitoring/dummy.md
-    - Process list: monitoring/dummy.md
-    - Misc. INFORMATION_SCHEMA tables: monitoring/dummy.md
-    - Percona Monitoring and Management:
-      - How to install PMM: monitoring/dummy.md
-      - How to setup MySQL monitoring: monitoring/dummy.md
-      - Etc...: monitoring/dummy.md
   - Backup and Restore:
     - Overview: backup-and-restore/dummy.md
     - Backup locks: backup-and-restore/dummy.md
@@ -280,12 +269,18 @@ nav:
         - Google Cloud: reference/dummy.md
       - Set up PMM Client:
         - wizard/set-up-pmm-client/index.md
-        - Percona Repositories: wizard/set-up-pmm-client/percona-repositories.md
-        - Docker: reference/dummy.md
-        - Manual Installation: reference/dummy.md
-      - Connect Databases:
-        - wizard/connect-databases/index.md
-        - RDS/Aurora: reference/dummy.md
-        - Google Cloud: reference/dummy.md
-        - Azure: reference/dummy.md
-        - Remote Monitoring: reference/dummy.md
+        - Install PMM Client:
+          - Percona Repositories: wizard/set-up-pmm-client/install-pmm-client/percona-repositories.md
+          - Docker image: reference/dummy.md
+          - Manual install: reference/dummy.md
+        - Connect Database:
+          - MySQL:
+            - Self-hosted / AWS EC2: wizard/set-up-pmm-client/mysql/self-hosted.md
+            - AWS RDS / AWS Aurora: reference/dummy.md
+            - Azure: reference/dummy.md
+            - Google Cloud: reference/dummy.md
+          - PostgreSQL: reference/dummy.md
+          - MongoDB: reference/dummy.md
+          - ProxySQL: reference/dummy.md
+          - HAproxy: reference/dummy.md
+          - Remote monitoring: reference/dummy.md

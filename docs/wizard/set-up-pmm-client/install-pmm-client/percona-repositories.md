@@ -1,8 +1,4 @@
-# Set up PMM Client using Percona Repositories
-
-Use the Percona Repositories as it's a simplified, hassle-free process that will ensure you will always get the latest, tested and supported version without a hitch. It's also the fastest way to make sure you have accurate and insightful performance to monitor with PMM Server with all the cool features.
-
-## Install PMM Client
+# Install PMM Client using Percona Repositories
 
 === "apt"
 
@@ -77,9 +73,14 @@ Register on PMM Server with IP address `192.168.33.14` using the default `admin/
 pmm-admin config --server-insecure-tls --server-url=https://admin:admin@192.168.33.14:443 192.168.33.23 generic mynode
 ```
 
-
 ## Next step: Connect Databases to PMM Server
 
-Now that you have both PMM Server and one or more PMM Clients installed you need to do now is to connect one or more Databases to PMM Server. Learn how in the button below.
+Now that you have both PMM Server and one or more PMM Clients installed all you need to do now is to connect one or more Databases to PMM Server.
 
-[Connect Databases to PMM Server :material-arrow-right:](../connect-databases/index.md){ .md-button .md-button--primary }
+| <small>*Type of database*</small> | |
+| ------------------- | --------------------------- |
+| :material-dolphin: **MySQL** | [**Connect Database** :material-arrow-right:](../mysql/self-hosted.md) |
+| :material-elephant: **PostgreSQL** | [**Connect Database** :material-arrow-right:](#) |
+| :material-leaf: **MongoDB** | [**Connect Database** :material-arrow-right:](#) |
+| :material-database: **ProxySQL** | [**Connect Database** :material-arrow-right:](#) |
+| :material-database: **HAproxy** | [**Connect Database** :material-arrow-right:](#) |

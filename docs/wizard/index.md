@@ -8,20 +8,34 @@ Percona Monitoring and Management (PMM) is an open-source platform that oblitera
     <i info>Note:</i> Depending on where you have your database hosted, you may already have this step automated for you, so only minimal configuration will be required.
 
 ``` mermaid
-graph LR
-PS(PMM Server)
-DB[(Database)] -- Data collection --> PC(PMM Client)
+graph RL
+subgraph s1[Step 1]
+    PS(PMM Server)
+end
+subgraph s2[Step 2]
+    DB[(Database)] -- Data collection --> PC(PMM Client)
+end
 PC -- Transmission --> PS
-  
 ```
 
 ## Requirements
 
 | Disk | Memory | Ports |
-| - | - | - |
+| ---- | ------ | ----- |
 | :material-check-bold: 1 GB of storage per monitored database node.<br> :material-check-bold: 1 GB of storage per monitored database node for data retention set to one week. | :material-check-bold: Each database node should have at least 2 GB of memory for effective monitoring.<br> **Note:** The increase in memory usage is not proportional to the number of nodes.<br> **Example:** Data from 20 nodes should be easily handled with 16 GB. | :material-check-bold: By default, port 443 should be opened on the PMM Server.<br> :material-check-bold: The database port should be open for the PMM Agent. |
 
 ## Select where you want to run PMM Server
+
+First step is to decide on a host for PMM Server. You can choose from a wide array of options below.
+
+``` mermaid
+graph RL
+subgraph s1[Now: Step 1]
+    PS(PMM Server)
+end
+DB[(Database)] -- Data collection --> PC(PMM Client)
+PC -- Transmission --> PS
+```
 
 === "Bare Metal / Virtual (recommended)"
 
