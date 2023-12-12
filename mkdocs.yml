@@ -44,8 +44,17 @@ theme:
     - content.action.view
 extra_css:
   - css/design.css
+  - css/extra.css
 plugins:
-    - search
+    search: {}
+    with-pdf:
+      output_path: "_pdf/psmysql.pdf"
+      cover_title: "Percona Server for MySQL documentation"
+      cover_subtitle: 2.2.0 (June 30, 2023)
+      author: "Percona Technical Documentation Team"
+      cover_logo: docs/assets/mysql.jpg
+      custom_template_path: _resource/templates
+      enabled_if_env: ENABLE_PDF_EXPORT
 extra:
   version:
     provider: mike
