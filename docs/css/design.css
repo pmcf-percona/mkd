@@ -27,44 +27,87 @@
 /* Variables */
 :root {
     --white: #fff;
-    /* Percona Tonal Palette */
+
+    /* Percona Night */
     --night500: #0E1A53;
     --night450: #263164;
     --night400: #3E4875;
-    --night50: #E7E8EE;
+
+    /* Percona Aqua */
     --aqua700: #22947E;
     --aqua600: #2CBEA2;
+
+    /* Percona Sky */
+    --sky900: #08386B;
+    --sky800: #0B4A8C;
     --sky700: #0E5FB5;
-    --sky650: #106DCF;
     --sky600: #127AE8;
     --sky500: #1486FF;
     --sky400: #439EFF;
     --sky300: #62AEFF;
+    --sky200: #93C7FF;
+
+    /* Percona Stone */
+    --stone900: #2C323E;
+    --stone800: #3A4151;
+    --stone50: #F0F1F4;
+
     /* mkdocs root override */
     --md-primary-fg-color--dark: var(--night400);
 }
 [data-md-color-scheme="percona-light"] {
     /* Primitives */
-    --md-typeset-a-color: var(--sky650);
     --md-primary-fg-color: var(--sky700);
-    --md-accent-fg-color: var(--sky650);
+
+    /* Type */
+    --md-typeset-color: #2C323E;
+    --md-typeset-a-color: var(--sky700);
+
+    /* Defaults */
+    --md-default-bg-color: var(--white);
+    --md-default-fg-color--light: rgba(44,50,62,0.72);
+    --md-default-fg-color--lighter: rgba(44,50,62,0.40);
+    --md-default-fg-color--lightest: rgba(44,50,62,0.25);
+
+    /* Accent */
+    --md-accent-fg-color: var(--sky500);
     
     /* Footer */
     --md-footer-fg-color: var(--md-typeset-color);
     --md-footer-fg-color--light: var(--md-default-fg-color--light);
     --md-footer-fg-color--lighter: var(--md-default-fg-color--lighter);
-    --md-footer-bg-color: var(--night50);
-    --md-footer-bg-color--dark: var(--night50);
-    
+    --md-footer-bg-color: var(--stone50);
+    --md-footer-bg-color--dark: var(--stone50);
+
+    /* Code */
+    --md-code-bg-color: var(--stone800);
+    --md-code-bg-color: var(--stone50);
 }
 [data-md-color-scheme="slate"] {
     /* Primitives */
     --md-hue: 230;
-    --md-typeset-a-color: var(--sky400);
-    --md-primary-fg-color: var(--sky500);
+    --md-primary-fg-color: var(--sky200);
+
+    /* Type */
+    --md-typeset-color: #FBFBFB;
+    --md-typeset-a-color: var(--sky200);
+
+    /* Defaults */
+    --md-default-bg-color: var(--stone900);
+    --md-default-fg-color--light: rgba(251,251,251,0.72);
+    --md-default-fg-color--lighter: rgba(251,251,251,0.4);
+    --md-default-fg-color--lightest: rgba(209,213,222,0.25);
+
+    /* Accent */
     --md-accent-fg-color: var(--sky400);
+    --md-accent-bg-color: var(--stone900);
+
     /* Footer */
-    --md-footer-bg-color--dark: var(--night400);
+    --md-footer-bg-color--dark: var(--stone800);
+
+    /* Code */
+    --md-code-bg-color: var(--stone50);
+    --md-code-bg-color: var(--stone800);
 }
 
 /* Typography specifics */
@@ -120,19 +163,29 @@
 }
 
 /* Base components */
-[data-md-color-scheme="percona-light"] .md-main a:focus:not(.md-button),
-[data-md-color-scheme="percona-light"] .md-main a:hover:not(.md-button) {
-    color: var(--sky400);
-}
-[data-md-color-scheme="slate"] .md-main a:focus:not(.md-button),
-[data-md-color-scheme="slate"] .md-main a:hover:not(.md-button) {
-    color: var(--sky300);
-}
 .md-typeset .md-button {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 0.6818rem;
+    font-weight: bold;
+    padding: 0.4167em 1.6em;
     border-radius: 10rem;
+    transition: all 0.2s ease-out;
 }
-.md-typeset .md-button:not(.md-button--primary):not(:hover):not(:focus) {
+.md-typeset .md-button--primary {
+    color: var(--md-accent-bg-color);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.20);
+}
+.md-typeset .md-button--primary:focus,
+.md-typeset .md-button--primary:hover {
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px -1px rgba(0, 0, 0, 0.20);
+}
+.md-typeset .md-button:not(.md-button--primary):focus,
+.md-typeset .md-button:not(.md-button--primary):hover {
+    background: none;
     color: var(--md-accent-fg-color);
+}
+.md-typeset code {
+    border-radius: 0.2rem;
 }
 .md-button code,
 .md-typeset .md-button:hover code,
@@ -222,18 +275,19 @@
 [data-banner] {
     padding: 1.5em;
     margin: 2em 0;
-    border: 0.05rem solid var(--md-default-fg-color--lighter);
-    /* border: 0.05rem solid var(--md-typeset-table-color); */
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
     border-radius: 0.2rem;
 }
 [data-banner] .title {
-    font-weight: normal;
+    font-weight: bold;
     margin: 0;
 }
 [data-banner] > :last-child {
     margin-bottom: 0;
 }
 [data-banner] a:link {
+    font-family: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 0.6818rem;
     font-weight: bold;
 }
 [data-banner] .actions > p {
@@ -420,6 +474,15 @@ i[warning] {
 }
 i[warning] [class*="moji"] {
     color: #ff9100;
+}
+
+/* Modals */
+.md-consent__overlay {
+    backdrop-filter: blur(.2rem);
+    background-color: rgba(44,50,62,0.72);
+}
+.md-consent__inner {
+    background-color: var(--md-footer-bg-color--dark);
 }
 
 /* Media queries */
