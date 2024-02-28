@@ -33,7 +33,6 @@
     --fHeading: "Poppins", "Roboto", Arial, Helvetica, sans-serif;
 
     /* Colors */
-
     --white: #fff;
 
     /* Percona Night */
@@ -42,6 +41,7 @@
     --night400: #3E4875;
 
     /* Percona Aqua */
+    --aqua800: #1A7362;
     --aqua700: #22947E;
     --aqua600: #2CBEA2;
 
@@ -146,10 +146,17 @@
 .md-typeset h1 {
     margin: 0 0 0.75em;
 }
-.md-header,
-.md-nav__title[for="__drawer"] {
+.md-header {
     font-family: var(--fHeading);
     font-weight: bold;
+}
+.md-header__button.md-logo {
+    margin: 0.2rem 0.1rem 0.2rem 0.4rem;
+    padding: 0.2rem;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    height: 1.6rem;
 }
 .md-nav__link--active {
     font-weight: bold;
