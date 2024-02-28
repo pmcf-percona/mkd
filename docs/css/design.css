@@ -48,6 +48,7 @@
     --night400: #3E4875;
 
     /* Percona Aqua */
+    --aqua900: #14584B;
     --aqua800: #1A7362;
     --aqua700: #22947E;
     --aqua600: #2CBEA2;
@@ -611,6 +612,34 @@ i[warning] [class*="moji"] {
     margin: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* Super Nav */
+
+.superNav {
+    font-family: var(--fHeading);
+    font-size: 0.5625rem;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    color: var(--white);
+    background-color: var(--stone800);
+}
+.superNav a {
+    display: inline-block;
+    padding: 0.25rem 0.625rem !important;
+    transition: all 0.2s ease-out;
+}
+.superNav a:hover {
+    opacity: 0.7;
+}
+.superNav svg {
+    width: 1.375em;
+    height: 1.375em;
+    margin-right: 0.125em;
+    fill: currentColor;
+    vertical-align: -0.3125em;
 }
 
 /* Media queries */
